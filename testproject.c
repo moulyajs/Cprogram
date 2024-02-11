@@ -146,6 +146,7 @@ int main()
     printf("size of long double %zd\n", sizeof(long double));
 }
 */
+/*
 #include <stdio.h>
 
 int main()
@@ -158,3 +159,68 @@ int main()
 
     printf("%d, %d", a, b);
 }
+*/
+/*
+#include <stdio.h>
+int main()
+{
+    int score = 95;
+    int word = 90;
+    //    if (score > word)
+    //     printf("jackpot");
+    if (score > word)
+    {
+        // score++;
+        printf("you win");
+    }
+}
+*/
+/*
+#include <stdio.h>
+int main()
+{
+    int number, remainder;
+    printf("enter a number\n");
+    scanf("%d", &number);
+    remainder = number % 2;
+    if (remainder == 0)
+
+        printf("even number");
+    else
+        printf("odd number");
+    return 0;
+}
+*/
+/*
+#include <stdio.h>
+int main()
+{
+    int number, sign;
+    printf("enter a number");
+    scanf("%d", &number);
+    if (number > 0)
+
+        sign = 1;
+    else if (number == 0)
+        sign = 0;
+    else
+        sign = -1;
+    printf("the sign is %d", sign);
+}
+*/
+/*
+#include <stdio.h>
+int main()
+{
+    int a = 0, b = 4, c = 5;
+    if (a == 0)
+        if (c == 8)
+
+            printf("nested if is executed");
+        else
+            printf("nested if is not executed");
+    else
+        printf("if is not executed");
+    return 0;
+}
+*/
