@@ -224,3 +224,19 @@ int main()
     return 0;
 }
 */
+#include <stdio.h>
+int main()
+{
+    int a, b;
+    a = 16, b = 78;
+    float c = 2.5;
+    printf("%d %d\n", sizeof(a), sizeof(short int));
+    printf("%4.2f\n", c);
+    printf("%2.1f\n", c);
+    printf("%5d %d\n", 16, b);
+    printf("ravan\r ram\n");
+    printf("ram\n lakshman\n");
+    printf("ram\t bheem\n");
+    printf("\"Mahabharat\"");
+    return 0;
+}
