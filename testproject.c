@@ -293,6 +293,7 @@ int main()
     return 0;
 }
 */
+/*
 #include <stdio.h>
 int main()
 {
@@ -321,3 +322,59 @@ int main()
     }
     return 0;
 }
+*/
+/*
+#include <stdio.h>
+int main()
+{
+    float a, b;
+    char operator;
+    printf("enter the expression");
+    scanf("%f %c %f", &a, &operator, & b);
+    switch (operator)
+    {
+    case '+':
+        printf("%.2f\n", a + b);
+        break;
+    case '-':
+        printf("%.2f\n", a - b);
+        break;
+    case '*':
+        printf("%.2f\n", a * b);
+        break;
+    case '/':
+        if (b == 0)
+            printf("division by zero");
+        else
+            printf("%.2f\n", a / b);
+        break;
+    default:
+        printf("unknown operator");
+        break;
+    }
+    return 0;
+}
+*/
+/*
+#include <stdio.h>
+int main()
+{
+    for (int i = 1, j = 2; i <= 5; ++i, j += 2)
+        printf("%d\n", i * j);
+    return 0;
+}
+*/
+/*
+#include <stdio.h>
+int main()
+{
+    unsigned int sum = 0;
+    unsigned int count = 0;
+    printf("enter the number of integers u want to sum:");
+    scanf("%d", &count);
+    for (unsigned int i = 1; i <= count; ++i)
+        sum += i;
+    printf("the sum of first %u numbers is %u", count, sum);
+    return 0;
+}
+*/
