@@ -378,3 +378,73 @@ int main()
     return 0;
 }
 */
+/*
+#include <stdio.h>
+int main(void)
+{
+    int count = 1;
+    while (count <= 5)
+    {
+        printf("%d\n", count);
+        ++count;
+    }
+    return 0;
+}
+*/
+/*
+#include <stdio.h>
+int main()
+{
+    int number;
+    do
+        scanf("%d", &number);
+    while (number != 20);
+}
+*/
+/*
+#include <stdio.h>
+int main()
+{
+    int number = 4;
+    do
+    {
+        printf("number = %d", number);
+        number++;
+    } while (number < 4);
+}
+*/
+/*
+#include <stdio.h>
+int main()
+{
+    int count = 5;
+    for (int i = 1; i <= count; ++i)
+    {
+        int sum = 0;
+        for (int j = 1; j <= i; ++j)
+            sum += j;
+        printf("\n%d\t%d", i, sum);
+    }
+    return 0;
+}
+*/
+/*
+#include <stdio.h>
+int main()
+{
+    enum day
+    {
+        monday,
+        tuesday,
+        wednesday,
+        thursday,
+        friday,
+        saturday,
+        sunday
+    };
+    for (enum day days = monday; days <= sunday; days++)
+        if (days == wednesday)
+            continue;
+    printf("its not wednesday\n");
+}
+*/
