@@ -448,3 +448,48 @@ int main()
     printf("its not wednesday\n");
 }
 */
+/*
+#include <stdio.h>
+int main()
+{
+    int grades[10];
+    int count = 10;
+    long sum = 0;
+    float average = 0.0f;
+    printf("\n enter the 10 grades \n");
+    int i;
+    for (i = 0; i < count; ++i)
+    {
+        printf("%2u>", i + 1);
+        scanf("%d", &grades[i]);
+        sum += grades[i];
+    }
+    printf("sum=%d\n", sum);
+    average = (float)sum / count;
+    printf("the average is %.2f", average);
+    return 0;
+}
+*/
+/*
+#include <stdio.h>
+#define MONTHS 12
+int main()
+{
+    int days[MONTHS] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    int index;
+    for (index = 0; index < MONTHS; index++)
+        printf("months %d has %2d days\n", index + 1, days[index]);
+    return 0;
+}
+*/
+#include <stdio.h>
+int main()
+{
+    int array_values[10] = {0, 1, 4, 9, 16};
+    int i;
+    for (i = 5; i < 10; ++i)
+        array_values[i] = i * i;
+    for (i = 0; i < 10; ++i)
+        printf("array_values[%d]=%d\n", i, array_values[i]);
+    return 0;
+}
