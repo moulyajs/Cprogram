@@ -495,3 +495,62 @@ int main()
     return 0;
 }
 */
+/*
+#include <stdio.h>
+int main()
+{
+    char c;
+    scanf("%c", &c);
+    if (c == 'a' || c == 'A' || c == 'e' || c == 'E' || c == 'i' || c == 'I' || c == 'O' || c == 'o' || c == 'u' || c == 'U')
+        printf("%c is vowel", c);
+    else if (c == 'b' || c == 'B' || c == 'c' || c == 'C' || c == 'd' || c == 'D' || c == 'f' || c == 'F' || c == 'g' || c == 'G' || c == 'h' || c == 'H' || c == 'j' || c == 'J' || c == 'k' || c == 'K' || c == 'l' || c == 'L' || c == 'm' || c == 'M' || c == 'n' || c == 'N' || c == 'P' || c == 'p' || c == 'q' || c == 'Q' || c == 'R' || c == 'r' || c == 's' || c == 'S' || c == 'T' || c == 't' || c == 'V' || c == 'v' || c == 'W' || c == 'w' || c == 'x' || c == 'X' || c == 'y' || c == 'Y' || c == 'z' || c == 'Z')
+        printf("%c is consonant", c);
+    else
+        printf("invalid input");
+    return 0;
+}
+*/
+/*
+#include <stdio.h>
+int main()
+{
+    int n, m;
+    float sum, average;
+    scanf("%d", &n);
+    for (m = 1; m <= n; ++m)
+        sum += m;
+    printf("%.0f\n", sum);
+    average = sum / n;
+    printf("%.1f", average);
+    return 0;
+}
+*/
+/*
+#include <stdio.h>
+void multiply(int x, int y)
+{
+    int result = x * y;
+    printf("the product of %d and %d is : %d\n", x, y, result);
+}
+int main(void)
+{
+    multiply(10, 20);
+    multiply(45, 1);
+    multiply(4, 5);
+
+    return 0;
+}
+*/
+#include <stdio.h>
+int two(int x, int y)
+{
+    int result = x * y;
+    return result;
+}
+int main(void)
+{
+    int result = 0;
+    result = two(10, 20);
+    printf("the result is %d", result);
+    return 0;
+}
