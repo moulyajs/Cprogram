@@ -541,6 +541,7 @@ int main(void)
     return 0;
 }
 */
+/*
 #include <stdio.h>
 int two(int x, int y)
 {
@@ -554,3 +555,4 @@ int main(void)
     printf("the result is %d", result);
     return 0;
 }
+*/
