@@ -556,3 +556,20 @@ int main(void)
     return 0;
 }
 */
+/*
+#include <stdio.h>
+int main(void)
+{
+    char str1[] = "TO BE OR NOT TO BE";
+    char str2[] = "hello everyone";
+    unsigned int count = 0;
+    while (str1[count] != "\0")
+        ++count;
+    printf("the length of the string \"%s\" is %d characters.\n", str1, count);
+    count = 0;
+    while (str2[count] != "\0")
+        ++count;
+    printf("the length of the string \"%s\" is %d characters.\n", str2, count);
+    return 0;
+}
+*/
