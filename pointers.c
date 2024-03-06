@@ -137,3 +137,64 @@ void square(int *x)
     *x = (*x) * (*x);
 }
 */
+/*
+#include <stdio.h>
+int array_sum(int array[], const int n);
+int main(void)
+{
+    int values[10] = {2, 4, -6, 43, 7, 8, 5, 9, 0, 5};
+    printf("the sum is %d\n", array_sum(values, 10));
+    return 0;
+}
+int array_sum(int array[], const int n)
+{
+    int sum = 0, *ptr;
+    int *const array_end = array + n;
+    for (ptr = &array[0]; ptr < array_end; ++ptr)
+        sum += *ptr;
+    return sum;
+}
+*/
+/*
+#include <stdio.h>
+int array_sum(int *ptr, const int n);
+int main(void)
+{
+    int values[10] = {2, 4, -6, 43, 7, 8, 5, 9, 0, 5};
+    printf("the sum is %d\n", array_sum(values, 10));
+    return 0;
+}
+int array_sum(int *ptr, const int n)
+{
+    int sum = 0;
+    int *const array_end = ptr + n;
+    for (; ptr < array_end; ++ptr)
+        sum += *ptr;
+    return sum;
+}
+*/
+/*
+#include <stdio.h>
+#include <string.h>
+int main(void)
+{
+    int i;
+    char multiple[] = "a string";
+    char *p = multiple;
+    for (i = 0; i < strlen(multiple); ++i)
+        printf("multiple[%d] = %c *(p+%d) = %c  &multiple[%d] = %p p+%d = %p\n", i, multiple[i], i, *(p + i), i, &multiple[i], i, p + i);
+    return 0;
+}
+*/
+#include <stdio.h>
+#include <string.h>
+int main(void)
+{
+    int i;
+    long multiple[] = {15L, 25L, 35L, 45L};
+    long *p = multiple;
+    for (i = 0; i < sizeof(multiple) / sizeof(multiple[0]); ++i)
+        printf("address p+%d (&multiple[%d]): %llu     *(p+%d)  value: %d\n", i, i, (unsigned long long)(p + i), i, *(p + i));
+    printf("\n   type long occupies:%d bytes\n", (int)sizeof(long));
+    return 0;
+}
