@@ -186,6 +186,7 @@ int main(void)
     return 0;
 }
 */
+/*
 #include <stdio.h>
 #include <string.h>
 int main(void)
@@ -197,4 +198,23 @@ int main(void)
         printf("address p+%d (&multiple[%d]): %llu     *(p+%d)  value: %d\n", i, i, (unsigned long long)(p + i), i, *(p + i));
     printf("\n   type long occupies:%d bytes\n", (int)sizeof(long));
     return 0;
+}
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+int string_length(const char *string);
+int main()
+{
+    printf("%d\n", string_length("stringlength test"));
+    printf("%d\n", string_length(""));
+    printf("%d\n", string_length("jason"));
+    return 0;
+}
+int string_length(const char *string)
+{
+    const char *lastaddress = string;
+    while (*lastaddress)
+        ++lastaddress;
+    return lastaddress - string;
 }
